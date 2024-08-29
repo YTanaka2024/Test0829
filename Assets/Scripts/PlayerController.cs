@@ -15,7 +15,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        theta += Time.deltaTime;
-        transform.localScale = Vector3.one * Mathf.Sin(theta);
+    //    theta += Time.deltaTime;
+     //   transform.localScale = Vector3.one * Mathf.Sin(theta);
     }
 }
