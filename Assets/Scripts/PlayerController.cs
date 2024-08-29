@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    float theta;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -13,6 +15,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.localScale = transform.localScale * 1.001f;
+        theta += Time.deltaTime;
+        transform.localScale = Vector3.one * Mathf.Sin(theta);
     }
 }
