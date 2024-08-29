@@ -9,7 +9,10 @@
 /[Bb]uilds/
 /[Ll]ogs/
 /[Uu]ser[Ss]ettings/
-/[Aa]ssets/IgnoredAssets
+
+# Ignore all files in IgnoredAssets except meta files
+/Assets/IgnoredAssets/*
+!/Assets/IgnoredAssets/*.meta
 
 # MemoryCaptures can get excessive in size.
 # They also could contain extremely sensitive data
